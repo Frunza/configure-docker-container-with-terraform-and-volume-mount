@@ -2,7 +2,7 @@
 
 ## Scenario
 
-If you are using `Terraform` inside your `Docker` cotnainer, you might run in a scenario where you generate some files from terraform, but since they run inside the container, you do not have access to them to investigate their content. How can you somehow get those files locally, while they are still generated inside the `Docker` cotnainer?
+If you are using `Terraform` inside your `Docker` container, you might run in a scenario where you generate some files from terraform, but since they run inside the container, you do not have access to them to investigate their content. How can you somehow get those files locally, while they are still generated inside the `Docker` container?
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ EOF
 }
 ```
 
-If you copyed your code inside the container
+If you copied your code inside the container
 ```sh
 COPY ./../terraform /infrastructure
 ```
@@ -46,7 +46,6 @@ When you run the the code in a `ci/cd` pipeline you probably want to avoid the v
 ## Usage
 
 For **development**, navigate to the root of the git repository and run the following command:
-
 ```sh
 sh scripts/update.sh
 ```
